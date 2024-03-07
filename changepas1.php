@@ -16,6 +16,8 @@ $cp=$_POST['cp'];
 $np=$_POST['np'];
 $rp=$_POST['rp'];
 if($np==$rp)
+
+
 {
 $chk=mysqli_query($dbcon,"select * from user_log where uid='$uid' and pwd='$cp'");
 if(mysqli_num_rows($chk)>0)
